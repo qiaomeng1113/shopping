@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link type="text/css" rel="stylesheet" href="../css/lrtk.css" />
+    <link type="text/css" rel="stylesheet" href="../css/goods.css" />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript" src="../js/lunbo.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <script type="text/javascript" src="../js/Marquee.js"></script>
+
+</head>
+<body>
+    <div id="header_top">
+        <div id="header_top_box">
+            <!-- 地区选择代码 开始 -->
+            <ul id="list1" style="width:465px;height:36px;">
+                <li id="summary-stock" class="clearfix">
+                    <div class="dt">送至：</div>
+                    <div class="dd">
+
+                        <div id="store-selector">
+                            <div class="text"><div>江西省 南昌市 东湖区</div><b></b></div>
+                            <div onclick="$('#store-selector').removeClass('hover')" class="close"></div>
+                        </div><!--store-selector end-->
+                        <div id="store-prompt"><strong></strong></div><!--store-prompt end--->
+                    </div>
+                </li>
+                <li class="welcome">欢迎来到风尚购物</li>
+                <li ><a class="login" href="signIn.html" >登录</a></li>
+                <li><a class="login" href="register.html" >注册</a></li>
+            </ul>
+            <script src="../js/location.js"></script>
+            <!-- 代码 结束 -->
+            <!-- 头部右边部分-->
+            <ul class="header_right">
+                <li class="yhm">
+                    <a href="#" class="wode">我的风尚</a><span>|</span>
+                    <ul class="list1">
+                        <li><a href="#">我的订单</a> </li>
+                        <li><a href="#">我的收藏</a> </li>
+                    </ul>
+                </li>
+                <li class="phone">4001-677-077<span>|</span></li>
+                <li ><a href="#" class="wode">客服中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_center">
+        <div class="center_top">
+            <h1>
+                <a href="index.html">
+                    <img src="../images/FSLogo.png" title="风尚">
+                </a>
+            </h1>
+            <div class="freecarry">
+                <img src="../images/freeCarry.jpg">
+            </div>
+            <div class="searchBox">
+                <div class="searchBar">
+                    <input type="text" value="请输入产品名称或关键词" class="searchInput"onfocus="if(this.value=='请输入产品名称或关键词')this.value='';" onblur="if(this.value=='')this.value='请输入产品名称或关键词';" >
+                    <input type="button" value="搜索" class="btnSearch" id="btnSer">
+                </div>
+                <div class="hotSearch">
+                    <a href="#">鞋子</a>丨
+                    <a href="#">薇依床品</a>丨
+                    <a href="#">空气炸锅</a>丨
+                    <a href="#">零食</a>丨
+                    <a href="#">酒</a>丨
+                    <a href="#">羽绒服</a>丨
+                    <a href="#">牛肉</a>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <i class="icon">&nbsp;</i>
+                    <i>我的购物车</i>
+                    <i>></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 导航栏-->
+    <div class="header_bottom">
+        <div class="navBar">
+
+            <div class="hc_lnav jslist">
+                <div class="allbtn">
+                    <h2><a href="#"><strong>&nbsp;</strong>全部商品分类<i>&nbsp;</i></a></h2>
+                    <ul style="width:190px" class="jspop box">
+                        <li class=a1>
+                            <div class=tx><a href="#"><i>&nbsp;</i>家居生活</a></div>
+
+                            <div class=pop>
+                                <h3><a href="#">各地名优茶</a></h3>
+                                    <dl>
+                                        <dt>红茶</dt>
+                                        <dd>
+                                            <a class="ui-link" href="" >金骏眉</a>
+                                            <a class="ui-link"  href="">正山小种</a>
+                                            <a class="ui-link"  href="">祁门红茶</a>
+                                            <a class="ui-link"   href="">坦洋工夫</a>
+                                            <a class="ui-link" href="javascript:;">其他红茶</a>
+                                            <a class="un ui-link"    href="">政和工夫</a>
+                                            <a class="ui-link"   href="">滇红工夫</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>黑茶</dt>
+                                        <dd>
+                                            <a class="ui-link" href="">白沙溪黑茶</a>
+                                            <a class="ui-link"  href="">普洱茶饼</a>
+                                            <a class="ui-link" href="">普洱沱茶</a>
+                                            <a class="ui-link"  href="">普洱茶砖</a>
+                                            <a class="ui-link"  href="">普洱散茶</a>
+                                            <a class="ui-link" href="">其他黑茶</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>白茶</dt>
+                                        <dd>
+                                            <a class="ui-link" href="#">白牡丹</a>
+                                            <a class="ui-link"  href="">白毫银针</a>
+                                            <a class="ui-link" href="">寿眉</a>
+                                            <a class="ui-link" href="">其他白茶</a>
+                                        </dd>
+                                    </dl>
+                                </dl>
+                                <dl>
+                                    <dt>品牌</dt>
+                                    <dd>
+                                        <a  href="">滋恩</a>
+                                        <a  href="">远荣</a>
+                                        <a  href="">顶峰</a>
+                                        <a  href="">公泰</a>
+                                        <a  href="">一品堂</a>
+                                        <a  href="">好吉</a>
+                                        <a   href="">绿雪芽</a>
+                                        <a  href="">台湾梅山制茶</a>
+                                        <a href="" >白沙溪</a>
+                                        <a href="">联兴茶叶</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>价格</dt>
+                                    <dd>
+                                        <a  href="">100元及以下</a>
+                                        <a  href="">100-300元</a>
+                                        <a  href="">300元及以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>净含量</dt>
+                                    <dd>
+                                        <a  href="" >50g及以下</a>
+                                        <a   href="">51-100g</a>
+                                        <a  href="">101-250g</a>
+                                        <a   href="">250g以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>包装</dt>
+                                    <dd>
+                                        <a href="">经济自饮装</a>
+                                        <a href="" >精美礼品装</a>
+                                    </dd>
+                                </dl>
+                                <div class=clr></div>
+                                <div class=act><a href=""><img src="../images/20150518092317.jpg" /></a> </div>
+                            </div>
+                        </li>
+                        <li class=a2>
+                            <div class=tx><a href=""><i>&nbsp;</i>数码家电</a> </div>
+
+                            <div class=pop>
+                                <h3><a href="">花草保健茶</a></h3>
+                                <dl>
+                                    <dl>
+                                        <dt>瘦身</dt>
+                                        <dd>
+                                            <a class="ui-link" href="" >玫瑰荷叶茶</a>
+                                            <a class="ui-link"    href="">玄米茶</a>
+                                            <a  class="ui-link" href="">兰香子</a>
+                                            <a class="ui-link"   href="" >纤维泡腾片</a>
+                                            <a class="ui-link"   href="" >青梅苹果酸</a>
+                                            <a class="ui-link"   href="">三草茶</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>美容</dt>
+                                        <dd>
+                                            <a class="ui-link" href="" >法兰西玫瑰</a>
+                                            <a class="ui-link"  href=""  >冻干柠檬片</a>
+                                            <a class="un ui-link"   href="">果粒茶</a>
+                                            <a    class="ui-link" href="" >大麦茶</a>
+                                            <a class="ui-link"   href="">蜂蜜抹茶粉</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>丰胸</dt>
+                                        <dd>
+                                            <a class="ui-link" href="" >木瓜葛根粉</a>
+                                            <a class="ui-link"    href=""  >蜂蜜木瓜粉</a>
+                                            <a class="ui-link"   href="">红酒木瓜丽人饮</a>
+                                        </dd>
+                                    </dl>
+                                </dl>
+                                <dl>
+                                    <dt>品牌</dt>
+                                    <dd>
+                                        <a href="">与花香</a>
+                                        <a href="">美丽快攻</a>
+                                        <a href="" >顶峰</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>价格</dt>
+                                    <dd>
+                                        <a href="" >100元及以下</a>
+                                        <a   href="" >100-300元</a>
+                                        <a  href="">300元及以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>净含量</dt>
+                                    <dd>
+                                        <a href="">50g及以下</a>
+                                        <a href="">51-100g</a>
+                                        <a href="">101-250g</a>
+                                        <a href="">250g以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>包装</dt>
+                                    <dd>
+                                        <a href="">经济自饮装</a>
+                                        <a href="">精美礼品装</a>
+                                    </dd>
+                                </dl>
+                                <div class=clr></div>
+                                <div class=act><a href=""><img src="../images/20150518092236.jpg" /></a></div>
+                            </div>
+                        </li>
+                        <li class=a3>
+                            <div class=tx><a href=""><i>&nbsp;</i>服饰配件</a> </div>
+
+                            <div class=pop>
+                                <h3><a href="">精选茶具</a></h3>
+                                <dl>
+                                    <dl>
+                                        <dt>陶瓷</dt>
+                                        <dd>
+                                            <a class="ui-link" href="">茶叶罐</a>
+                                            <a class="ui-link"  href="">功夫茶具</a>
+                                            <a class="ui-link" href="" >茶壶</a>
+                                            <a class="ui-link"  href="">茶宠</a>
+                                            <a class="ui-link" href=""  >茶杯</a>
+                                            <a class="ui-link"  href="">茶具礼盒</a>
+                                        </dd>
+                                    </dl>
+                                </dl>
+                                <dl>
+                                    <dt>品牌</dt>
+                                    <dd>
+                                        <a  href="">恒越</a>
+                                        <a  href="">卓越</a>
+                                        <a   href="">国尊陶瓷</a>
+                                        <a  href="">宏远达</a>
+                                        <a href="">福万利</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>价格</dt>
+                                    <dd>
+                                        <a href="">100元及以下</a>
+                                        <a  href="">100-300元</a>
+                                        <a  href="">300元及以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>包装</dt>
+                                    <dd>
+                                        <a href="">经济自饮装</a>
+                                        <a  href="">精美礼品装</a>
+                                    </dd>
+                                </dl>
+                                <div class=clr></div>
+                                <div class=act><a href=""><img src="../images/20150518092152.jpg" /></a></div>
+                            </div>
+                        </li>
+                        <li class=a4>
+                            <div class=tx><a href=""><i>&nbsp;</i>美容美发</a> </div>
+
+                            <div class=pop>
+                                <h3><a href="">可口茶食</a></h3>
+                                <dl>
+                                    <dl>
+                                        <dt>干果</dt>
+                                        <dd>
+                                            <a class="ui-link" href="">杏仁</a>
+                                            <a class="ui-link"   href="">瓜子</a>
+                                            <a  class="un ui-link" href="">开心果</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>零食</dt>
+                                        <dd>
+                                            <a class="ui-link"  href="">水晶柠檬片</a>
+                                            <a class="ui-link"  href="">方块酥</a>
+                                            <a class="ui-link" href="javascript:;">凤梨酥</a>
+                                            <a  class="ui-link" href="">燕麦巧克力</a>
+                                        </dd>
+                                    </dl>
+                                </dl>
+                                <dl>
+                                    <dt>品牌</dt>
+                                    <dd>
+                                        <a href="">赛园</a>
+                                        <a  href="">新味</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>价格</dt>
+                                    <dd>
+                                        <a  href="">100元及以下</a>
+                                        <a  href="">100-300元</a>
+                                        <a  href="">300元及以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>净含量</dt>
+                                    <dd>
+                                        <a  href="" >50g及以下</a>
+                                        <a   href="">51-100g</a>
+                                        <a  href="">101-250g</a>
+                                        <a  href="">250g以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>包装</dt>
+                                    <dd>
+                                        <a  href="">经济自饮装</a>
+                                        <a   href="">精美礼品装</a>
+                                    </dd>
+                                </dl>
+                                <div class=clr></div>
+                                <div class=act><a href=""><img src="../images/20150518092213.jpg" /></a> </div>
+                            </div>
+                        </li>
+                        <li class=a5>
+                            <div class=tx><a href=""><i>&nbsp;</i>食品健康</a> </div>
+
+                            <div class=pop>
+                                <h3><a href="">可口茶食</a></h3>
+                                <dl>
+                                    <dl>
+                                        <dt>干果</dt>
+                                        <dd>
+                                            <a class="ui-link" href="">杏仁</a>
+                                            <a class="ui-link"   href="">瓜子</a>
+                                            <a  class="un ui-link" href="">开心果</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>零食</dt>
+                                        <dd>
+                                            <a class="ui-link"  href="">水晶柠檬片</a>
+                                            <a class="ui-link"  href="">方块酥</a>
+                                            <a class="ui-link" href="javascript:;">凤梨酥</a>
+                                            <a  class="ui-link" href="">燕麦巧克力</a>
+                                        </dd>
+                                    </dl>
+                                </dl>
+                                <dl>
+                                    <dt>品牌</dt>
+                                    <dd>
+                                        <a href="">赛园</a>
+                                        <a  href="">新味</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>价格</dt>
+                                    <dd>
+                                        <a  href="">100元及以下</a>
+                                        <a  href="">100-300元</a>
+                                        <a  href="">300元及以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>净含量</dt>
+                                    <dd>
+                                        <a  href="" >50g及以下</a>
+                                        <a   href="">51-100g</a>
+                                        <a  href="">101-250g</a>
+                                        <a  href="">250g以上</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>包装</dt>
+                                    <dd>
+                                        <a  href="">经济自饮装</a>
+                                        <a   href="">精美礼品装</a>
+                                    </dd>
+                                </dl>
+                                <div class=clr></div>
+                                <div class=act><a href=""><img src="images/20150518092213.jpg" /></a> </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="tv"><a href="#">电视直播</a></li>
+                <li><a href="rmb.html">热卖榜</a></li>
+                <li><a href="fsh.html">风尚惠</a></li>
+                <li><a href="#">品牌店中店</a></li>
+                <li id="marquee6">
+                    <div style="display: none;"></div>
+                    <ul>
+                        <li><a href="#">风尚购物器以及相关配套服务管理</a> </li>
+                        <li><a href="#">风尚购物价格解释</a> </li>
+                        <li><a href="#">风尚购物器以及相关配套服务管理</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--轮播图-->
+    <div id="box">
+        <ul id="img-list">
+            <li class="active"><img src="../images/bed.jpg"></li>
+            <li><img src="../images/bowl.jpg"></li>
+            <li><img src="../images/xie.jpg"></li>
+            <li><img src="../images/sleep.jpg"></li>
+            <li><img src="../images/spring.jpg"></li>
+        </ul>
+        <div id="btn-list">
+            <span class="active"></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+<!--热卖排行-->
+    <div class="goodShot">
+        <div class="sale w">
+            <ul class="onsale">
+                <li><a href="#"><img src="../images/ad1.jpg"></a></li>
+                <li><a href="#"><img src="../images/ad2.jpg"></a></li>
+                <li><a href="#"><img src="../images/ad3.jpg"></a></li>
+                <li><a href="#"><img src="../images/ad4.jpg"></a></li>
+                <li><a href="#"><img src="../images/ad5.jpg"></a></li>
+            </ul>
+        </div>
+
+    <!--热播推荐-->
+           <div class="rebo w">
+               <div class="hotsale">
+                   <h2>热播推荐</h2>
+                   <span class="ranking">热卖排行</span>
+               </div>
+               <div class="recommend">
+                   <ul class="hotre">
+                       <li>
+                           <a href="#"><img src="../images/wine1.jpg"</a>
+                           <div class="bot">
+                               <p class="wname">
+                                   <a href="#"> 五粮液股份双龙黄瓶组</a>
+                                   <i class="price">￥799.00</i>
+                               </p>
+                           </div>
+                           <div class="siteRe">
+                               <h6>网站推荐:</h6>
+                               <p>五粮配方：五粮液“陈氏秘方”综合了五种粮食的精华，采用科学合理的配比方式。适当饮酒有助于身体健康能刺激胃液分泌与唾液分泌，起到健胃作用，有通风、散寒、舒筋、活血作用，可延缓衰老、预防心脑血管病、预防癌症</p>
+                           </div>
+                       </li>
+
+                   </ul>
+                   <ul class="num"></ul>
+                    <ul class="rtool fr">
+                        <li>
+                            <a href="#">
+                                <img src="../images/311464-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/311464-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/311859-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/311464-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/311859-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/311859-1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+               </div>
+           </div>
+        <!--家居生活-->
+        <div class="life w" style="margin-top:12px;">
+        <div class="tab1">
+            <h2>家居生活</h2>
+            <ul class="tabNav">
+                <li><a href="#">家居用品</a></li>
+                <li><a href="#" >卧室用品</a> </li>
+                <li><a href="#">厨浴电器</a> </li>
+            </ul>
+        </div>
+        <!--tab切换列表-->
+        <!--列表1-->
+        <div class="tabs">
+            <div class="jj">
+                <div class="aile">
+                    <a href="#">
+                        <img src="../images/aileshi.jpg">
+                    </a>
+                </div>
+                <!--切换列表内容-->
+                <ul  class="selected">
+                    <li>
+                        <a href="#">
+                            <img src="../images/pink.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <img src="../images/case.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/child.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/maojin.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥99.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/water.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/huaxi.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--列表1结束-->
+            <!--列表2开始-->
+            <div class="jj hide" style="display: none;" >
+                <div class="aile">
+                    <a href="#">
+                        <img src="../images/weiyi.jpg">
+                    </a>
+                </div>
+                <!--切换列表内容-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/beizi.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/case.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/beizi.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/qicai.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥899.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/rou.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/qicai.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--列表2结束-->
+            <!--列表3开始-->
+            <div class="jj hide"style="display: none;" >
+                <div class="aile">
+                    <a href="#">
+                        <img src="../images/shuang.jpg">
+                    </a>
+                </div>
+                <!--切换列表内容-->
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/ger1.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/ger2.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/ger3.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥688.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/ger4.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥899.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/ger5.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/huaxi.jpg">
+                        </a>
+                        <p>
+                            <a href="#">歌菲多功能专业级冲击钻组合</a>
+                            <span>￥299.00</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--列表3-->
+        </div>
+    </div>
+        <!--家居生活结束-->
+        <!--数码家电列表-->
+        <div class="life w" style="margin-top:12px;">
+            <div class="tab1">
+                <h2>数码家电</h2>
+                <ul class="tabNav">
+                    <li><a href="#">日用家电</a></li>
+
+                </ul>
+            </div>
+            <!--tab切换列表-->
+            <!--列表1-->
+            <div class="tabs">
+                <div class="jj">
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/jiad.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul  class="selected">
+                        <li>
+                            <a href="#">
+                                <img src="../images/tv.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <img src="../images/shou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/phone.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bing.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥99.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/water.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/huaxi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表1结束-->
+            </div>
+        </div>
+        <!--数码家电结束-->
+        <!--保健养生-->
+        <div class="life w" style="margin-top:12px;">
+            <div class="tab1">
+                <h2>保健养生</h2>
+                <ul class="tabNav">
+                    <li><a href="#">保健用品</a></li>
+                    <li><a href="#">运动户外</a></li>
+
+                </ul>
+            </div>
+            <!--tab切换列表-->
+            <!--列表1-->
+            <div class="tabs">
+                <div class="jj">
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/baojian.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul  class="selected">
+                        <li>
+                            <a href="#">
+                                <img src="../images/tv.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <img src="../images/shou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/phone.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bing.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥99.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/gai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表1结束-->
+                <!--列表2开始-->
+                <div class="jj hide" style="display: none;" >
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/sports.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/case.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/beizi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥899.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/rou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表2结束-->
+            </div>
+        </div>
+        <!--保健养生结束-->
+        <!--服饰配件开始-->
+        <div class="life w" style="margin-top:12px;">
+            <div class="tab1">
+                <h2>服饰配件</h2>
+                <ul class="tabNav">
+                    <li><a href="#">鞋帽配饰</a></li>
+                    <li><a href="#">手表</a></li>
+                    <li><a href="#">服饰内衣</a></li>
+
+                </ul>
+            </div>
+            <!--tab切换列表-->
+            <!--列表1-->
+            <div class="tabs">
+                <div class="jj">
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/shoe.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul  class="selected">
+                        <li>
+                            <a href="#">
+                                <img src="../images/clothes.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <img src="../images/xie1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/xie2.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bing.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥99.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/gai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表1结束-->
+                <!--列表2开始-->
+                <div class="jj hide" style="display: none;" >
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/watch.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/case.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/beizi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥899.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/rou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表2结束-->
+                <!--列表3开始-->
+                <div class="jj hide" style="display: none;" >
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/fushi.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/case.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/beizi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥899.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/rou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表3结束-->
+            </div>
+        </div>
+        <!--服饰配件结束-->
+        <!--美容美发开始-->
+        <div class="life w" style="margin-top:12px;margin-bottom:50px;">
+            <div class="tab1">
+                <h2>美容美发</h2>
+                <ul class="tabNav">
+                    <li><a href="#">美容化妆</a></li>
+                    <li><a href="#">功能护肤</a></li>
+                    <li><a href="#">基础护理</a></li>
+
+                </ul>
+            </div>
+            <!--tab切换列表-->
+            <!--列表1-->
+            <div class="tabs">
+                <div class="jj">
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/ranfa.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul  class="selected">
+                        <li>
+                            <a href="#">
+                                <img src="../images/wa.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <img src="../images/xie1.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/xie2.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bing.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥99.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/gai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表1结束-->
+                <!--列表2开始-->
+                <div class="jj hide" style="display: none;" >
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/watch.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/case.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/beizi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥899.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/rou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表2结束-->
+                <!--列表3开始-->
+                <div class="jj hide" style="display: none;" >
+                    <div class="aile">
+                        <a href="#">
+                            <img src="../images/fushi.jpg">
+                        </a>
+                    </div>
+                    <!--切换列表内容-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/yang.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/case.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/beizi.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥688.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥899.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/rou.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/qicai.jpg">
+                            </a>
+                            <p>
+                                <a href="#">歌菲多功能专业级冲击钻组合</a>
+                                <span>￥299.00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!--列表3结束-->
+            </div>
+        </div>
+        <!--美容美发结束-->
+   </div>
+<!--footer部分-->
+    <!--注册部分-->
+<div class="bottom">
+        <figure>
+            <img src="../images/phone.png">
+            <figcaption>
+                <h3>
+                    <a href="#">手机注册 一步搞定</a>
+                </h3>
+                <p>输入手机号 输入验证码</p>
+                <p>验证码-设定密码-完成注册</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/tel.png">
+            <figcaption>
+                <h3>
+                    <a href="#">型录/电商/新媒体视频招商加盟</a>
+                </h3>
+                <p>柳小姐：0791-88110022-8126</p>
+                <p>邬小姐：0791-88110022-8126</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/erji.png">
+            <figcaption>
+                <h3>
+                    <a href="#">在线客服</a>
+                </h3>
+                <p>24小时客服热线:</p>
+                <p>4001-677-077</p>
+            </figcaption>
+        </figure>
+</div>
+<!--注册部分结束-->
+<!--关于风尚购物-->
+<div class="abfs w">
+    <figure class="fl" style="margin-left:0;">
+        <a href="#"><img src="../images/gy.jpg" class="fl"></a>
+        <figcaption>
+            <h4>
+                <a href="#">关于风尚购物</a>
+            </h4>
+            <p>
+                江西风尚电视购物股份有限公司于2009年9月28日正式成立，公司致力于现代家庭电视购物，是传媒和零售的完美组合。江西电视台风尚购物频道是经国家广电总局批准的全国性的、同时也是江西第一家真正的专业家庭电视购物频道。
+            </p>
+        </figcaption>
+    </figure>
+    <ul class="way fl">
+        <li><h3>帮助中心</h3></li>
+        <li><a href="#">购物流程</a> </li>
+        <li><a href="#">使用订单状态说明</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>配送方式</h3></li>
+        <li><a href="#">免费配送地区</a> </li>
+        <li><a href="#">配送范围</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>支付方式</h3></li>
+        <li><a href="#">货到付款</a> </li>
+        <li><a href="#">银联支付</a> </li>
+        <li><a href="#">支付宝</a> </li>
+        <li><a href="#">微信支付</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>客户服务</h3></li>
+        <li><a href="#">售后及退换货</a> </li>
+        <li><a href="#">在线客服</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>会员中心</h3></li>
+        <li><a href="#">资料修改</a> </li>
+        <li><a href="#">找回密码</a> </li>
+        <li><a href="#">会员等级</a> </li>
+        <li><a href="#">会员权益</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>招商专区</h3></li>
+        <li><a href="#">关于我们</a> </li>
+        <li><a href="#">合作流程</a> </li>
+        <li><a href="#">联系我们</a> </li>
+        <li><a href="#">供应商系统</a> </li>
+    </ul>
+</div>
+<p class="w ad">
+   ICP经营许可证：赣ICP备15000001号
+</p>
+<ul class="pay">
+    <li>
+        <a href="#">
+            <img src="../images/unionpay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/alipay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/weChatPay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/ICPNum.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/TrustSite.jpg">
+        </a>
+    </li>
+</ul>
+<div class="last"></div>
+<!--侧边栏-->
+<ul class="sider">
+    <li><a href="#"><i>购物车</i><span>0</span></a></li>
+    <li><a href="#"><i>我的消息</i><span>0</span></a></li>
+    <li>
+        <a href="#" id="wet">
+            <i>微信公众号</i>
+        </a>
+    </li>
+</ul>
+    <div id="code">
+        <img src="../images/QRCode.jpg">
+    </div>
+</body>
+</html>

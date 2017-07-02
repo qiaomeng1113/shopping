@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link type="text/css" rel="stylesheet" href="../css/goods.css" />
+    <link type="text/css" rel="stylesheet" href="../css/lrtk.css" />
+    <script type="text/javascript" src="../js/area.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/identify.js"></script>
+    <script type="text/javascript" src="../js/easyform.js"></script>
+</head>
+<body>
+<div id="header_top">
+    <div id="header_top_box">
+        <!-- 地区选择代码 开始 -->
+        <ul id="list1" style="width:465px;height:36px;">
+            <li class="welcome">欢迎来到风尚购物</li>
+            <li ><a class="login" href="signIn.html" >登录</a></li>
+            <li><a class="login" href="register.html" >注册</a></li>
+        </ul>
+        <script src="../js/location.js"></script>
+        <!-- 代码 结束 -->
+        <!-- 头部右边部分-->
+        <ul class="header_right">
+            <li class="yhm">
+                <a href="#" class="wode">我的风尚</a><span>|</span>
+                <ul class="list1">
+                    <li><a href="#">我的订单</a> </li>
+                    <li><a href="#">我的收藏</a> </li>
+                </ul>
+            </li>
+            <li class="phone">4001-677-077<span>|</span></li>
+            <li ><a href="#" class="wode">客服中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header_center">
+    <div class="center_top">
+        <h1>
+            <a href="#">
+                <img src="../images/FSLogo.png" title="风尚">
+            </a>
+        </h1>
+        <div class="freecarry">
+            <img src="../images/freeCarry.jpg">
+        </div>
+    </div>
+</div>
+<div class="header_bottom"></div>
+<!--头部结束-->
+<!--订单列表-->
+<div class="cart_w">
+    <!--订单步骤-->
+    <div class="cart_step">
+        <img src="../images/dh_submitorder.png">
+    </div>
+    <div class="deliver">
+        <div class="hdnav">
+            收货人信息
+            <a href="#">[新增]</a>
+        </div>
+        <div class="radbot">
+            <ul class="info_box">
+                <li>
+                    <label class="t_info">所在省市：</label>
+                    <div id="area"></div>
+                    <span class="in_close"><a href="#">关闭</a> </span>
+                </li>
+                <li>
+                    <label class="t_info">
+                        <span class="special">*</span>
+                        详细地址：
+                    </label>
+                    <input type="text" class="check_in fl" id="chex" required>
+                    <p class="fl">省市区无需重复填写</p>
+                </li>
+                <li>
+                    <label class="t_info">
+                        <span class="special">*</span>
+                        联系人：
+                    </label>
+                    <input name="uid" type="text" id="name" class="fl check_in"
+                            style="width:148px;">
+                </li>
+                <li>
+                    <label class="t_info">
+                        <span class="special">*</span>
+                        手机号码：
+                    </label>
+                    <input type="text" class="check_in fl mobile" style="width:148px;" required>
+                </li>
+                <li>
+                    <label class="t_info">
+                        固定电话：
+                    </label>
+                    <input type="text" class="check_in fl" id="chex" style="width:74px;">
+                    <input type="text" class="check_in fl" id="chex" style="width:114px;margin-left: 10px;">
+                    <p class="fl">区号-电话</p>
+                </li>
+                <li>
+                    <label class="t_info">
+                        邮编：
+                    </label>
+                    <input type="text" class="check_in fl" id="chex" style="width:74px;">
+                </li>
+                <li>
+                    <a href="#" class="preser">
+                        <img src="../images/xbsavebtn.gif">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="deliver">
+        <div class="hdnav">配送及支付方式</div>
+        <h3>请添加收货地址</h3>
+    </div>
+    <div class="deliver">
+        <div class="hdnav">订单备注</div>
+        <textarea name="" id="" cols="30" rows="2"></textarea>
+    </div>
+    <div class="deliver">
+        <div class="hdnav">购物清单</div>
+        <div class="cl_box fl">
+            <table class="list_con" width="985">
+                <tr id="tr_line">
+                    <th style="width: 350px;">商品信息</th>
+                    <th width="105" style="text-align: center;">商品编码</th>
+                    <th width="90" style="text-align: center;">商品单价</th>
+                    <th width="90" style="text-align: center;">是否货到付款</th>
+                    <th width="105" style="text-align: center;">库存状况</th>
+                    <th width="60" style="text-align: center;">数量</th>
+                    <th width="90" style="text-align: center;">小计</th>
+                </tr>
+                <tr id="tr_info">
+                    <td style="padding-top: 10px;">
+                        <div class="goods_wrap"></div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--footer部分-->
+<!--注册部分-->
+<div class="bottom">
+    <figure>
+        <img src="../images/phone.png">
+        <figcaption>
+            <h3>
+                <a href="#">手机注册 一步搞定</a>
+            </h3>
+            <p>输入手机号 输入验证码</p>
+            <p>验证码-设定密码-完成注册</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../images/tel.png">
+        <figcaption>
+            <h3>
+                <a href="#">型录/电商/新媒体视频招商加盟</a>
+            </h3>
+            <p>柳小姐：0791-88110022-8126</p>
+            <p>邬小姐：0791-88110022-8126</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../images/erji.png">
+        <figcaption>
+            <h3>
+                <a href="#">在线客服</a>
+            </h3>
+            <p>24小时客服热线:</p>
+            <p>4001-677-077</p>
+        </figcaption>
+    </figure>
+</div>
+<!--注册部分结束-->
+<!--关于风尚购物-->
+<div class="abfs w">
+    <figure class="fl" style="margin-left:0;">
+        <a href="#"><img src="../images/gy.jpg" class="fl"></a>
+        <figcaption>
+            <h4>
+                <a href="#">关于风尚购物</a>
+            </h4>
+            <p>
+                江西风尚电视购物股份有限公司于2009年9月28日正式成立，公司致力于现代家庭电视购物，是传媒和零售的完美组合。江西电视台风尚购物频道是经国家广电总局批准的全国性的、同时也是江西第一家真正的专业家庭电视购物频道。
+            </p>
+        </figcaption>
+    </figure>
+    <ul class="way fl">
+        <li><h3>帮助中心</h3></li>
+        <li><a href="#">购物流程</a> </li>
+        <li><a href="#">使用订单状态说明</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>配送方式</h3></li>
+        <li><a href="#">免费配送地区</a> </li>
+        <li><a href="#">配送范围</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>支付方式</h3></li>
+        <li><a href="#">货到付款</a> </li>
+        <li><a href="#">银联支付</a> </li>
+        <li><a href="#">支付宝</a> </li>
+        <li><a href="#">微信支付</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>客户服务</h3></li>
+        <li><a href="#">售后及退换货</a> </li>
+        <li><a href="#">在线客服</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>会员中心</h3></li>
+        <li><a href="#">资料修改</a> </li>
+        <li><a href="#">找回密码</a> </li>
+        <li><a href="#">会员等级</a> </li>
+        <li><a href="#">会员权益</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>招商专区</h3></li>
+        <li><a href="#">关于我们</a> </li>
+        <li><a href="#">合作流程</a> </li>
+        <li><a href="#">联系我们</a> </li>
+        <li><a href="#">供应商系统</a> </li>
+    </ul>
+</div>
+<p class="w ad">
+    ICP经营许可证：赣ICP备15000001号
+</p>
+<ul class="pay">
+    <li>
+        <a href="#">
+            <img src="../images/unionpay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/alipay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/weChatPay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/ICPNum.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/TrustSite.jpg">
+        </a>
+    </li>
+</ul>
+<div class="last"></div>
+
+</body>
+</html>

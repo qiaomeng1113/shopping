@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link type="text/css" rel="stylesheet" href="../css/goods.css" />
+    <link type="text/css" rel="stylesheet" href="../css/lrtk.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/location.js"></script>
+    <script type="text/javascript" src="../js/jquery.jqzoom.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script src="../js/share.js" type="text/javascript"></script>
+    <script src="../js/indexjs.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+</head>
+<body>
+<div id="header_top">
+    <div id="header_top_box">
+        <!-- 地区选择代码 开始 -->
+        <ul id="list1" style="width:465px;height:36px;">
+            <li class="welcome">欢迎来到风尚购物</li>
+            <li ><a class="login" href="signIn.html" >登录</a></li>
+            <li><a class="login" href="register.html" >注册</a></li>
+        </ul>
+        <script src="../js/location.js"></script>
+        <!-- 代码 结束 -->
+        <!-- 头部右边部分-->
+        <ul class="header_right">
+            <li class="yhm">
+                <a href="#" class="wode">我的风尚</a><span>|</span>
+                <ul class="list1">
+                    <li><a href="#">我的订单</a> </li>
+                    <li><a href="#">我的收藏</a> </li>
+                </ul>
+            </li>
+            <li class="phone">4001-677-077<span>|</span></li>
+            <li ><a href="#" class="wode">客服中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header_center">
+    <div class="center_top">
+        <h1>
+            <a href="#">
+                <img src="../images/FSLogo.png" title="风尚">
+            </a>
+        </h1>
+        <div class="freecarry">
+            <img src="../images/freeCarry.jpg">
+        </div>
+        <div class="searchBox">
+            <div class="searchBar">
+                <input type="text" value="请输入产品名称或关键词" class="searchInput"onfocus="if(this.value=='请输入产品名称或关键词')this.value='';" onblur="if(this.value=='')this.value='请输入产品名称或关键词';" >
+                <input type="button" value="搜索" class="btnSearch" id="btnSer">
+            </div>
+            <div class="hotSearch">
+                <a href="#">鞋子</a>丨
+                <a href="#">薇依床品</a>丨
+                <a href="#">空气炸锅</a>丨
+                <a href="#">零食</a>丨
+                <a href="#">酒</a>丨
+                <a href="#">羽绒服</a>丨
+                <a href="#">牛肉</a>
+            </div>
+        </div>
+        <div class="cart">
+            <a href="#">
+                <i class="icon">&nbsp;</i>
+                <i>我的购物车</i>
+                <i>></i>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+<!-- 导航栏-->
+<div class="header_bottom">
+    <div class="navBar">
+
+        <div class="hc_lnav jslist">
+            <div class="allbtn">
+                <h2><a href="#"><strong>&nbsp;</strong>全部商品分类<i>&nbsp;</i></a></h2>
+                <ul style="width:190px" class="jspop box">
+                    <li class=a1>
+                        <div class=tx><a href="#"><i>&nbsp;</i>家居生活</a></div>
+
+                        <div class=pop>
+                            <h3><a href="#">各地名优茶</a></h3>
+                            <dl>
+                                <dt>红茶</dt>
+                                <dd>
+                                    <a class="ui-link" href="" >金骏眉</a>
+                                    <a class="ui-link"  href="">正山小种</a>
+                                    <a class="ui-link"  href="">祁门红茶</a>
+                                    <a class="ui-link"   href="">坦洋工夫</a>
+                                    <a class="ui-link" href="javascript:;">其他红茶</a>
+                                    <a class="un ui-link"    href="">政和工夫</a>
+                                    <a class="ui-link"   href="">滇红工夫</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>黑茶</dt>
+                                <dd>
+                                    <a class="ui-link" href="">白沙溪黑茶</a>
+                                    <a class="ui-link"  href="">普洱茶饼</a>
+                                    <a class="ui-link" href="">普洱沱茶</a>
+                                    <a class="ui-link"  href="">普洱茶砖</a>
+                                    <a class="ui-link"  href="">普洱散茶</a>
+                                    <a class="ui-link" href="">其他黑茶</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>白茶</dt>
+                                <dd>
+                                    <a class="ui-link" href="#">白牡丹</a>
+                                    <a class="ui-link"  href="">白毫银针</a>
+                                    <a class="ui-link" href="">寿眉</a>
+                                    <a class="ui-link" href="">其他白茶</a>
+                                </dd>
+                            </dl>
+                            </dl>
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>
+                                    <a  href="">滋恩</a>
+                                    <a  href="">远荣</a>
+                                    <a  href="">顶峰</a>
+                                    <a  href="">公泰</a>
+                                    <a  href="">一品堂</a>
+                                    <a  href="">好吉</a>
+                                    <a   href="">绿雪芽</a>
+                                    <a  href="">台湾梅山制茶</a>
+                                    <a href="" >白沙溪</a>
+                                    <a href="">联兴茶叶</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格</dt>
+                                <dd>
+                                    <a  href="">100元及以下</a>
+                                    <a  href="">100-300元</a>
+                                    <a  href="">300元及以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>净含量</dt>
+                                <dd>
+                                    <a  href="" >50g及以下</a>
+                                    <a   href="">51-100g</a>
+                                    <a  href="">101-250g</a>
+                                    <a   href="">250g以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>包装</dt>
+                                <dd>
+                                    <a href="">经济自饮装</a>
+                                    <a href="" >精美礼品装</a>
+                                </dd>
+                            </dl>
+                            <div class=clr></div>
+                            <div class=act><a href=""><img src="../images/20150518092317.jpg" /></a> </div>
+                        </div>
+                    </li>
+                    <li class=a2>
+                        <div class=tx><a href=""><i>&nbsp;</i>数码家电</a> </div>
+
+                        <div class=pop>
+                            <h3><a href="">花草保健茶</a></h3>
+                            <dl>
+                                <dl>
+                                    <dt>瘦身</dt>
+                                    <dd>
+                                        <a class="ui-link" href="" >玫瑰荷叶茶</a>
+                                        <a class="ui-link"    href="">玄米茶</a>
+                                        <a  class="ui-link" href="">兰香子</a>
+                                        <a class="ui-link"   href="" >纤维泡腾片</a>
+                                        <a class="ui-link"   href="" >青梅苹果酸</a>
+                                        <a class="ui-link"   href="">三草茶</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>美容</dt>
+                                    <dd>
+                                        <a class="ui-link" href="" >法兰西玫瑰</a>
+                                        <a class="ui-link"  href=""  >冻干柠檬片</a>
+                                        <a class="un ui-link"   href="">果粒茶</a>
+                                        <a    class="ui-link" href="" >大麦茶</a>
+                                        <a class="ui-link"   href="">蜂蜜抹茶粉</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>丰胸</dt>
+                                    <dd>
+                                        <a class="ui-link" href="" >木瓜葛根粉</a>
+                                        <a class="ui-link"    href=""  >蜂蜜木瓜粉</a>
+                                        <a class="ui-link"   href="">红酒木瓜丽人饮</a>
+                                    </dd>
+                                </dl>
+                            </dl>
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>
+                                    <a href="">与花香</a>
+                                    <a href="">美丽快攻</a>
+                                    <a href="" >顶峰</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格</dt>
+                                <dd>
+                                    <a href="" >100元及以下</a>
+                                    <a   href="" >100-300元</a>
+                                    <a  href="">300元及以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>净含量</dt>
+                                <dd>
+                                    <a href="">50g及以下</a>
+                                    <a href="">51-100g</a>
+                                    <a href="">101-250g</a>
+                                    <a href="">250g以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>包装</dt>
+                                <dd>
+                                    <a href="">经济自饮装</a>
+                                    <a href="">精美礼品装</a>
+                                </dd>
+                            </dl>
+                            <div class=clr></div>
+                            <div class=act><a href=""><img src="../images/20150518092236.jpg" /></a></div>
+                        </div>
+                    </li>
+                    <li class=a3>
+                        <div class=tx><a href=""><i>&nbsp;</i>服饰配件</a> </div>
+
+                        <div class=pop>
+                            <h3><a href="">精选茶具</a></h3>
+                            <dl>
+                                <dl>
+                                    <dt>陶瓷</dt>
+                                    <dd>
+                                        <a class="ui-link" href="">茶叶罐</a>
+                                        <a class="ui-link"  href="">功夫茶具</a>
+                                        <a class="ui-link" href="" >茶壶</a>
+                                        <a class="ui-link"  href="">茶宠</a>
+                                        <a class="ui-link" href=""  >茶杯</a>
+                                        <a class="ui-link"  href="">茶具礼盒</a>
+                                    </dd>
+                                </dl>
+                            </dl>
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>
+                                    <a  href="">恒越</a>
+                                    <a  href="">卓越</a>
+                                    <a   href="">国尊陶瓷</a>
+                                    <a  href="">宏远达</a>
+                                    <a href="">福万利</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格</dt>
+                                <dd>
+                                    <a href="">100元及以下</a>
+                                    <a  href="">100-300元</a>
+                                    <a  href="">300元及以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>包装</dt>
+                                <dd>
+                                    <a href="">经济自饮装</a>
+                                    <a  href="">精美礼品装</a>
+                                </dd>
+                            </dl>
+                            <div class=clr></div>
+                            <div class=act><a href=""><img src="../images/20150518092152.jpg" /></a></div>
+                        </div>
+                    </li>
+                    <li class=a4>
+                        <div class=tx><a href=""><i>&nbsp;</i>美容美发</a> </div>
+
+                        <div class=pop>
+                            <h3><a href="">可口茶食</a></h3>
+                            <dl>
+                                <dl>
+                                    <dt>干果</dt>
+                                    <dd>
+                                        <a class="ui-link" href="">杏仁</a>
+                                        <a class="ui-link"   href="">瓜子</a>
+                                        <a  class="un ui-link" href="">开心果</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>零食</dt>
+                                    <dd>
+                                        <a class="ui-link"  href="">水晶柠檬片</a>
+                                        <a class="ui-link"  href="">方块酥</a>
+                                        <a class="ui-link" href="javascript:;">凤梨酥</a>
+                                        <a  class="ui-link" href="">燕麦巧克力</a>
+                                    </dd>
+                                </dl>
+                            </dl>
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>
+                                    <a href="">赛园</a>
+                                    <a  href="">新味</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格</dt>
+                                <dd>
+                                    <a  href="">100元及以下</a>
+                                    <a  href="">100-300元</a>
+                                    <a  href="">300元及以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>净含量</dt>
+                                <dd>
+                                    <a  href="" >50g及以下</a>
+                                    <a   href="">51-100g</a>
+                                    <a  href="">101-250g</a>
+                                    <a  href="">250g以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>包装</dt>
+                                <dd>
+                                    <a  href="">经济自饮装</a>
+                                    <a   href="">精美礼品装</a>
+                                </dd>
+                            </dl>
+                            <div class=clr></div>
+                            <div class=act><a href=""><img src="../images/20150518092213.jpg" /></a> </div>
+                        </div>
+                    </li>
+                    <li class=a5>
+                        <div class=tx><a href=""><i>&nbsp;</i>食品健康</a> </div>
+
+                        <div class=pop>
+                            <h3><a href="">可口茶食</a></h3>
+                            <dl>
+                                <dl>
+                                    <dt>干果</dt>
+                                    <dd>
+                                        <a class="ui-link" href="">杏仁</a>
+                                        <a class="ui-link"   href="">瓜子</a>
+                                        <a  class="un ui-link" href="">开心果</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>零食</dt>
+                                    <dd>
+                                        <a class="ui-link"  href="">水晶柠檬片</a>
+                                        <a class="ui-link"  href="">方块酥</a>
+                                        <a class="ui-link" href="javascript:;">凤梨酥</a>
+                                        <a  class="ui-link" href="">燕麦巧克力</a>
+                                    </dd>
+                                </dl>
+                            </dl>
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>
+                                    <a href="">赛园</a>
+                                    <a  href="">新味</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>价格</dt>
+                                <dd>
+                                    <a  href="">100元及以下</a>
+                                    <a  href="">100-300元</a>
+                                    <a  href="">300元及以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>净含量</dt>
+                                <dd>
+                                    <a  href="" >50g及以下</a>
+                                    <a   href="">51-100g</a>
+                                    <a  href="">101-250g</a>
+                                    <a  href="">250g以上</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>包装</dt>
+                                <dd>
+                                    <a  href="">经济自饮装</a>
+                                    <a   href="">精美礼品装</a>
+                                </dd>
+                            </dl>
+                            <div class=clr></div>
+                            <div class=act><a href=""><img src="images/20150518092213.jpg" /></a> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="tv"><a href="#">电视直播</a></li>
+            <li><a href="#">热卖榜</a></li>
+            <li><a href="fsh.html">风尚惠</a></li>
+            <li><a href="#">品牌店中店</a></li>
+        </ul>
+    </div>
+</div>
+<!--详情-->
+<div class="item_head">
+    <div class="mod_search">
+        <a href="#">首页</a>
+        <span>></span>
+        <a href="#">所有类别</a>
+        <span>></span>
+        <a href="#">食品健康</a>
+        <span>></span>
+        <a href="#">茶酒礼品</a>
+        <span>></span>
+        <a href="#">法国伯爵进口干红葡萄酒尊享组</a>
+    </div>
+<!--商品放大镜-->
+    <div class="goods_intro">
+    <div class="right-extra" style="margin-top: 15px;width:355px;float: left;height:450px;">
+        <!--产品参数开始-->
+        <div style="width:355px;">
+            <div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="../images/b1.jpg" src="../images/s1.jpg" /></span> </div>
+            <!--缩图开始-->
+            <div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+                <div class="detail">
+                    <ul>
+                        <li><img alt="佳能" bimg="../images/b1.jpg" src="../images/s1.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b2.jpg" src="../images/s2.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b3.jpg" src="../images/s3.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b1.jpg" src="../images/s1.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b3.jpg" src="../images/s3.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b1.jpg" src="../images/s1.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b2.jpg" src="../images/s2.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b1.jpg" src="../images/s1.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b2.jpg" src="../images/s2.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b2.jpg" src="../images/s2.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b1.jpg" src="../images/s1.jpg" onmousemove="preview(this);"></li>
+                        <li><img alt="佳能" bimg="../images/b2.jpg" src="../images/s2.jpg" onmousemove="preview(this);"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="share_p">
+                <span>分享到：</span>
+                <span><a href="http://t.qq.com/"><img src="../images/tecent.png" ></a> </span>
+                <span><a href="http://www.sina.com.cn/"><img src="../images/sina.png" ></a> </span>
+                <span><a href="http://www.renren.com/"><img src="../images/renren.png" ></a> </span>
+                <span><a href="http://www.kaixin001.com/"><img src="../images/happy.png" ></a> </span>
+                <p class="st"><a href="#"><img src="../images/addFavorite.png"> </a> </p>
+            </div>
+
+            <!--缩图结束-->
+        </div>
+        <!--产品参数结束-->
+        <!--闭合div-->
+        <div style="clear:both;height:10px;"></div>
+    </div>
+<!--结束-->
+        <div class="item_base">
+            <div class="i_name">
+                <h2>法国伯爵进口干红葡萄酒尊享组</h2>
+            </div>
+            <span class="huo">商品货号：309986</span>
+            <div class="i_price">
+                <span>风尚价:</span>
+                <strong>￥299.00</strong>
+            </div>
+            <ul>
+                <li id="summary-stock" class="clearfix"style="width:205px;float:left;height:38px;">
+                    <div class="dt" style="float: left;line-height: 38px;">送至：</div>
+                    <div class="dd">
+
+                        <div id="store-selector">
+                            <div class="text"><div>江西省 南昌市 东湖区</div><b></b></div>
+                            <div onclick="$('#store-selector').removeClass('hover')" class="close"></div>
+                        </div><!--store-selector end-->
+                        <div id="store-prompt"><strong></strong></div><!--store-prompt end--->
+                    </div>
+                </li>
+            </ul>
+            <div class="choose">
+               <!-- <a href="javascript:;" title="减少">-</a>
+                <input type="text" value="1" maxlength="4" >
+                <a href="javascript:;" title="增加">+</a>-->
+                <input class="sdddq" id="inp"  > </input>
+            </div>
+            <h3 class="store_goods">
+                库存状况:有库存
+            </h3>
+            <div class="i_btn">
+                <a href="javascript:;" id="direct_buy">立即购买</a>
+                <a href="javascript:;" id="direct_buy">加入购物车</a>
+            </div>
+        </div>
+        <div class="shop_info">
+            <div class="codebuy">
+                <h3>
+                    <p>手机扫码订购</p>
+                    <img src="../images/ShowTDBarcodeImage.png">
+                    <span>银联支付/支付宝/微信支付</span>
+                </h3>
+            </div>
+            <div class="tvhis">
+                <a href="http://www.fstvgo.com/Goods/TV.aspx">查看往期电视商品</a>
+            </div>
+        </div>
+        <div class="items_d">
+            <div class="item_box1">
+                <div class="box_a">
+                    <div class="mt">
+                        <h3>同类商品</h3>
+                    </div>
+                    <ul class="common_goods">
+                        <li>
+                            <a href="#"><img src="../images/feng.jpg"> </a>
+                            <p class="p_name">意峰蜂蜜5+5瞄杀组</p>
+                            <strong>￥99.00</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/feng.jpg"> </a>
+                            <p class="p_name">意峰蜂蜜5+5瞄杀组</p>
+                            <strong>￥99.00</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/beef.jpg"> </a>
+                            <p class="p_name">意峰蜂蜜5+5瞄杀组</p>
+                            <strong>￥99.00</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box_b">
+                    <div class="mt">
+                        <h3>您浏览过的商品</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item_box2">
+                <div class="box2_nav">
+                    <ul class="ct_nav">
+                        <li class="changel">
+                            <a href="#">
+                                <span>商品介绍</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>规格参数</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>支付/配送/退换货</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>商品评价</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <!--商品介绍开始-->
+                    <div class="goods_intro key" >
+                        <img src="../images/309986-D-1.jpg">
+                    </div>
+                    <!--规格参数开始-->
+                    <div class="spec key" style="display: none;">
+                        <p class="zhu">主品说明</p>
+                        <div class="spec_con">法国伯爵干红葡萄酒6瓶组*2箱</div>
+                        <p class="zhu">规格参数</p>
+                        <div class="spec_con">1.主商品名称: 法国伯爵干红葡萄酒尊享组 2.主品件数：法国伯爵干红葡萄酒6瓶组*2箱 3.颜色：石榴红色 4.产品尺寸：750ml/瓶 5.规格內容：箱/6瓶 6.赠品：无 7.原酒产地：法国 8、葡萄种类：赤霞珠、梅洛、西拉 三种葡萄混合 9、葡萄年份：2014年的葡萄</div>
+                        <p class="zhu">功能说明</p>
+                        <div class="spec_con">葡萄酒鲜艳的颜色，清澈透明的体态，使人赏心悦目；倒入杯中，果香酒香年鼻；品尝时酒中单宁微带涩味，促进食欲。 酒精度温和，开瓶后樱桃以及梅子的香气夹杂着成熟红色水果的气息扑鼻而来，入口后如丝绒般柔滑，辛香渐浓。收尾清爽而明确，十分顺滑。余味中带有红色水果，甘草以及清新的瓜果味。这是一款用爱和尊贵的方式酿制而成的法国美酒，是您各种场合的选择！</div>
+                        <p class="zhu">使用时注意事项</p>
+                        <div class="spec_con">易碎需要轻拿轻放</div>
+                    </div>
+                    <!--支付-->
+                    <div class="paid key" style="display:none;">
+                        <div class="pay_tit">
+                            <div>支付方式：货到付款 支付宝</div>
+                            <h4>货到付款：</h4>
+                            <span>A</span>
+                            <p class="gg">目前风尚购物在已经开通电视购物的地区可以提供货到付款服务，您无需预先支付货款，只需先电话订购或直接在网站购买，在收到商品时再支付商品货款即可。</p>
+                            <p class="area">所有可配送地区</p>
+                            <hr style="border:1px solid #ccc;margin: 0px 40px;clear: both;font-family: Arial, Helvetica, sans-serif;
+       ">
+                            <h4>支付宝:</h4>
+                            <span style="top:955px;left:340px;">B</span>
+                            <p class="gg">目前网站使用的支付宝即时到帐的交易方式。在您提交订单后，网页会提示带您进入支付宝平台完成付款。 在“支付宝收银台”选择支付宝帐户余额或者网上银行付款。<br><a href="http://www.fstvgo.com/Goods/ItemDetail_309986_01.htm">支付宝支持的银行卡</a> </p>
+                            <p class="area">所有可配送地区</p>
+                            <hr style="border:1px solid #ccc;margin: 0px 40px;clear: both;font-family: Arial, Helvetica, sans-serif;
+       ">
+                            <h4>银联支付:</h4>
+                            <span style="top:1123px;left:340px;">C</span>
+                            <p class="gg">目前网站使用的支付宝即时到帐的交易方式。在您提交订单后，网页会提示带您进入支付宝平台完成付款。 在“支付宝收银台”选择支付宝帐户余额或者网上银行付款。<br><a href="http://www.fstvgo.com/Goods/ItemDetail_309986_01.htm">支付宝支持的银行卡</a> </p>
+                            <p class="area">所有可配送地区</p>
+                            <hr style="border:1px solid #ccc;margin: 0px 40px;clear: both;font-family: Arial, Helvetica, sans-serif;
+       ">
+                        </div>
+                    </div>
+                    <!--商品评价-->
+                    <div class="e_comment key" style="display: none;">
+                        <div class="rules">
+                            <h3 class="rultit">权利声明：</h3>
+                            <p>风尚购物上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是重要的经营资源，未经许可，禁止非法转载使用。</p>
+                            <p>注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。</p>
+                            <h3 class="rultit">价格说明：</h3>
+                            <p><strong>风尚价：</strong>风尚价为商品的销售价，是你最终决定是否购买商品的依据。</p>
+                            <p><strong>折扣：</strong>如无特殊说明，折扣指销售商在市场价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价=厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</p>
+                            <p><strong>异常问题：</strong>商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商进行咨询。</p>
+                        </div>
+                        <div class="comment_list">
+                            <div class="mt">全部评价<span>（2）</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer部分-->
+    <!--注册部分-->
+    <div class="bottom">
+        <figure>
+            <img src="../images/phone.png">
+            <figcaption>
+                <h3>
+                    <a href="#">手机注册 一步搞定</a>
+                </h3>
+                <p>输入手机号 输入验证码</p>
+                <p>验证码-设定密码-完成注册</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/tel.png">
+            <figcaption>
+                <h3>
+                    <a href="#">型录/电商/新媒体视频招商加盟</a>
+                </h3>
+                <p>柳小姐：0791-88110022-8126</p>
+                <p>邬小姐：0791-88110022-8126</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../images/erji.png">
+            <figcaption>
+                <h3>
+                    <a href="#">在线客服</a>
+                </h3>
+                <p>24小时客服热线:</p>
+                <p>4001-677-077</p>
+            </figcaption>
+        </figure>
+    </div>
+    <!--注册部分结束-->
+    <!--关于风尚购物-->
+    <div class="abfs w" style="margin-top:50px;">
+        <figure class="fl" style="margin-left:0;">
+            <a href="#"><img src="../images/gy.jpg" class="fl"></a>
+            <figcaption>
+                <h4>
+                    <a href="#">关于风尚购物</a>
+                </h4>
+                <p>
+                    江西风尚电视购物股份有限公司于2009年9月28日正式成立，公司致力于现代家庭电视购物，是传媒和零售的完美组合。江西电视台风尚购物频道是经国家广电总局批准的全国性的、同时也是江西第一家真正的专业家庭电视购物频道。
+                </p>
+            </figcaption>
+        </figure>
+        <ul class="way fl">
+            <li><h3>帮助中心</h3></li>
+            <li><a href="#">购物流程</a> </li>
+            <li><a href="#">使用订单状态说明</a> </li>
+        </ul>
+        <ul class="way fl">
+            <li><h3>配送方式</h3></li>
+            <li><a href="#">免费配送地区</a> </li>
+            <li><a href="#">配送范围</a> </li>
+        </ul>
+        <ul class="way fl">
+            <li><h3>支付方式</h3></li>
+            <li><a href="#">货到付款</a> </li>
+            <li><a href="#">银联支付</a> </li>
+            <li><a href="#">支付宝</a> </li>
+            <li><a href="#">微信支付</a> </li>
+        </ul>
+        <ul class="way fl">
+            <li><h3>客户服务</h3></li>
+            <li><a href="#">售后及退换货</a> </li>
+            <li><a href="#">在线客服</a> </li>
+        </ul>
+        <ul class="way fl">
+            <li><h3>会员中心</h3></li>
+            <li><a href="#">资料修改</a> </li>
+            <li><a href="#">找回密码</a> </li>
+            <li><a href="#">会员等级</a> </li>
+            <li><a href="#">会员权益</a> </li>
+        </ul>
+        <ul class="way fl">
+            <li><h3>招商专区</h3></li>
+            <li><a href="#">关于我们</a> </li>
+            <li><a href="#">合作流程</a> </li>
+            <li><a href="#">联系我们</a> </li>
+            <li><a href="#">供应商系统</a> </li>
+        </ul>
+    </div>
+    <p class="w ad">
+        ICP经营许可证：赣ICP备15000001号
+    </p>
+    <ul class="pay">
+        <li>
+            <a href="#">
+                <img src="../images/unionpay.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../images/alipay.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../images/weChatPay.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../images/ICPNum.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../images/TrustSite.jpg">
+            </a>
+        </li>
+    </ul>
+    <div class="last"></div>
+    <!--侧边栏-->
+    <ul class="sider">
+        <li><a href="#"><i>购物车</i><span>0</span></a></li>
+        <li><a href="#"><i>我的消息</i><span>0</span></a></li>
+        <li>
+            <a href="#" id="wet">
+                <i>微信公众号</i>
+            </a>
+        </li>
+    </ul>
+    <div id="code">
+        <img src="../images/QRCode.jpg">
+    </div>
+</body>
+</html>

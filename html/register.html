@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link type="text/css" rel="stylesheet" href="../css/jquery.idcode.css" />
+    <link type="text/css" rel="stylesheet" href="../css/lrtk.css" />
+    <script type="text/javascript" src="../js/style.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.idcode.js"></script>
+    <script type="text/javascript">
+        $(function  () {
+            //获取短信验证码
+            var validCode=true;
+            $(".msgs").click (function  () {
+                var time=30;
+                var code=$(this);
+                if (validCode) {
+                    validCode=false;
+                    code.addClass("msgs1");
+                    var t=setInterval(function  () {
+                        time--;
+                        code.html(time+"秒");
+                        if (time==0) {
+                            clearInterval(t);
+                            code.html("重新获取");
+                            validCode=true;
+                            code.removeClass("msgs1");
+
+                        }
+                    },1000)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<!--头部开始-->
+<div id="header_top">
+    <div id="header_top_box">
+        <!-- 地区选择代码 开始 -->
+        <ul id="list1" style="width:465px;height:36px;">
+
+            <li class="welcome">欢迎来到风尚购物</li>
+            <li ><a class="login" href="signIn.html" >登录</a></li>
+            <li><a class="login" href="register.html" >注册</a></li>
+        </ul>
+        <script src="../js/location.js"></script>
+        <!-- 代码 结束 -->
+        <!-- 头部右边部分-->
+        <ul class="header_right">
+            <li class="yhm">
+                <a href="#" class="wode">我的风尚</a><span>|</span>
+                <ul class="list1">
+                    <li><a href="#">我的订单</a> </li>
+                    <li><a href="#">我的收藏</a> </li>
+                </ul>
+            </li>
+            <li class="phone">4001-677-077<span>|</span></li>
+            <li ><a href="#" class="wode">客服中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header_center">
+    <div class="center_top">
+        <h1>
+            <a href="index.html">
+                <img src="../images/FSLogo.png" title="风尚">
+            </a>
+        </h1>
+        <div class="freecarry">
+            <img src="../images/freeCarry.jpg">
+        </div>
+    </div>
+</div>
+<!--头部结束-->
+<div class="header_bottom"></div>
+<!--头部结束-->
+<!--注册部分-->
+<div class="register">
+    <div class="reg_tit">
+        <h1>注册新用户</h1>
+        <p>
+            我已经注册，现在就<a href="signIn.html">登录</a>
+        </p>
+    </div>
+    <!--内容区-->
+    <div class="reg_con">
+        <div class="tag">
+            <a href="register.html">使用手机注册</a>
+        </div>
+        <div class="infor_box">
+            <div class="grey" style="margin-top:30px;">
+                <label>
+                    <span>*</span>
+                    手机号码：
+                </label>
+                <input type="text" class="ipt1 c_code_msg required">
+            </div>
+            <div class="grey">
+                <label>
+                    <span>*</span>
+                    验证码：
+                </label>
+                <!--<input type="text" class="phone_num" style="width:80px;">-->
+                <input type="text" id ="Txtidcode" class ="txtVerification required" style="width:80px;">
+                <span id="idcode"></span>
+                <span class="change">
+                        <a href="#" id="#butn">看不清，换一张</a>
+                    </span>
+            </div>
+            <div class="grey">
+                <label></label>
+                <span class="msgs">获取短信验证码</span>
+            </div>
+            <div class="grey">
+                <label>
+                    <span>*</span>
+                    手机验证码：
+                </label>
+                <input type="text" class="ipt1 c_code_msg required">
+            </div>
+            <div class="grey">
+                <label>
+                    <span>*</span>
+                    设定登录密码：
+                </label>
+                <input type="password" class="ipt1 c_code_msg required">
+            </div>
+            <div class="grey">
+                <label>
+                    <span>*</span>
+                    再次输入密码：
+                </label>
+                <input type="password" class="ipt1 c_code_msg">
+            </div>
+            <input type="submit" value="注  册" id="reg">
+        </div>
+    </div>
+</div>
+<script>
+    $.idcode.setCode();   //加载生成验证码方法
+    $("#butn").click(function(){
+        var IsBy = $.idcode.validateCode()  //调用返回值，返回值结果为true或者false
+        if(IsBy){
+            alert("验证码输入正确")
+        }else {
+            alert("请重新输入")
+        }
+    })
+</script>
+<!--footer部分-->
+<!--注册部分-->
+<div class="bottom">
+    <figure>
+        <img src="../images/phone.png">
+        <figcaption>
+            <h3>
+                <a href="#">手机注册 一步搞定</a>
+            </h3>
+            <p>输入手机号 输入验证码</p>
+            <p>验证码-设定密码-完成注册</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../images/tel.png">
+        <figcaption>
+            <h3>
+                <a href="#">型录/电商/新媒体视频招商加盟</a>
+            </h3>
+            <p>柳小姐：0791-88110022-8126</p>
+            <p>邬小姐：0791-88110022-8126</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="../images/erji.png">
+        <figcaption>
+            <h3>
+                <a href="#">在线客服</a>
+            </h3>
+            <p>24小时客服热线:</p>
+            <p>4001-677-077</p>
+        </figcaption>
+    </figure>
+</div>
+<!--注册部分结束-->
+<!--关于风尚购物-->
+<div class="abfs w">
+    <figure class="fl" style="margin-left:0;">
+        <a href="#"><img src="../images/gy.jpg" class="fl"></a>
+        <figcaption>
+            <h4>
+                <a href="#">关于风尚购物</a>
+            </h4>
+            <p>
+                江西风尚电视购物股份有限公司于2009年9月28日正式成立，公司致力于现代家庭电视购物，是传媒和零售的完美组合。江西电视台风尚购物频道是经国家广电总局批准的全国性的、同时也是江西第一家真正的专业家庭电视购物频道。
+            </p>
+        </figcaption>
+    </figure>
+    <ul class="way fl">
+        <li><h3>帮助中心</h3></li>
+        <li><a href="#">购物流程</a> </li>
+        <li><a href="#">使用订单状态说明</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>配送方式</h3></li>
+        <li><a href="#">免费配送地区</a> </li>
+        <li><a href="#">配送范围</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>支付方式</h3></li>
+        <li><a href="#">货到付款</a> </li>
+        <li><a href="#">银联支付</a> </li>
+        <li><a href="#">支付宝</a> </li>
+        <li><a href="#">微信支付</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>客户服务</h3></li>
+        <li><a href="#">售后及退换货</a> </li>
+        <li><a href="#">在线客服</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>会员中心</h3></li>
+        <li><a href="#">资料修改</a> </li>
+        <li><a href="#">找回密码</a> </li>
+        <li><a href="#">会员等级</a> </li>
+        <li><a href="#">会员权益</a> </li>
+    </ul>
+    <ul class="way fl">
+        <li><h3>招商专区</h3></li>
+        <li><a href="#">关于我们</a> </li>
+        <li><a href="#">合作流程</a> </li>
+        <li><a href="#">联系我们</a> </li>
+        <li><a href="#">供应商系统</a> </li>
+    </ul>
+</div>
+<p class="w ad">
+    ICP经营许可证：赣ICP备15000001号
+</p>
+<ul class="pay">
+    <li>
+        <a href="#">
+            <img src="../images/unionpay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/alipay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/weChatPay.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/ICPNum.jpg">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="../images/TrustSite.jpg">
+        </a>
+    </li>
+</ul>
+<div class="last"></div>
+</body>
+</html>
